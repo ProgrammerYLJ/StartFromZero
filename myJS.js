@@ -1,2 +1,2 @@
-//document.getElementById("testJS").innerHTML = "My JavaScript Test";
+alert("WELCOME!!!");
 
