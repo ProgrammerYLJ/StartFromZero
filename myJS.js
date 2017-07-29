@@ -1,6 +1,4 @@
-
 function computeAP(){
-	
 	
 	var now = new Date();
 	var years = now.getYear();
@@ -14,10 +12,12 @@ function computeAP(){
 	
 	var restTimeAP_obj = document.getElementById('restTimeAP');
 	
-	if(restTime > hours){
-		
-		var a = 12*(restTime-hours) + nowAP;
-		restTimeAP_obj.value=a;
+	if(restTime > hours)
+	{
+		var Date_B = new Date(years,months-1,days,restTime,0,0);  
+		var Date_C = new Date(Date_B - now);
+		var AP_Vol = Math.floor((Date_C.getUTCHours()*60 + Date_C.getUTCMinutes())/5) + nowAP;
+		restTimeAP_obj.value = AP_Vol;
 	}
 	
 }
