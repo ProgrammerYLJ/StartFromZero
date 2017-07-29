@@ -21,3 +21,8 @@ function computeAP(){
 	}
 	
 }
+
+function focusON(){
+	alert(333);
+	//document.getElementById('nowAP').focus();
+}

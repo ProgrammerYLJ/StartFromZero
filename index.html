@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 	<script type="text/javascript" src="myJS.js">
+	
 	</script>
 	
   </head>
@@ -18,13 +19,16 @@
 	<input type="number" id="nowAP">
 	<br>
 	<label>休息時間</label>
-	<input type="number" id="restTime">
+	<input type="time" id="restTime">
 	<br>
 	<label>休息時間時體力</label>
 	<input type="text" id="restTimeAP">
 	<br>
 	<input type="button" id="btn_compute" value="OK" onclick="computeAP();">
   </section>
+  <script>
+    document.getElementById("nowAP").focus();
+</script>
     <section class="page-header">
       <h1 class="project-name">Peter's First Github Website</h1>
       <h2 class="project-tagline"></h2>
